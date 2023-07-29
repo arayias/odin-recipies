@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+    }
+
+    .container{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(247, 247, 247);
+    }
+
+    .recipie-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      padding: 0 2rem;
+    }
+
+    .img-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      margin-top: 15px;
+    }
+
+    .recipie-image{
+      width: 100%;
+      height: 68vh;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .recipie-heading{
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    .short-desc{
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .recipie-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .recipie-container:hover{
+      transform: scale(1.05);
+      outline: #e2ceb8 solid 2px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img-container">
+      <img src="https://www.svgrepo.com/show/484579/cooking-bowl-shaped-lid-2.svg" alt="cooking-svg">
+    </div>
+    <h2 class='recipie-heading'>Odin Recipies</h2>
+    <div class="recipie-grid">
+      <div class="recipie-container">
+        <div class="recipie-image-container">
+          <img class="recipie-image" src="https://theschmidtywife.com/wp-content/uploads/2021/02/Featured_Homemade_Pizza-735x1103.jpg" alt="pizza-img">
+        </div>
+        <div class="short-desc">Pizza</div>
+      </div>
+
+      <div class="recipie-container">
+        <div class="recipie-image-container">
+          <img class="recipie-image" src="https://www.foodleclub.com/wp-content/uploads/2021/11/crispy-french-fries_1.jpg" alt="pizza-img">
+        </div>
+        <div class="short-desc">French Fries</div>
+      </div>
+
+      <div class="recipie-container">
+        <div class="recipie-image-container">
+          <img class="recipie-image" src="https://vikalinka.com/wp-content/uploads/2020/08/Best-Homemade-Burger-3-Edit.jpg" alt="pizza-img">
+        </div>
+        <div class="short-desc">Hamburger</div>
+      </div>
+
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
